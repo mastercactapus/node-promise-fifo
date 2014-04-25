@@ -131,4 +131,9 @@ describe("Promise FIFO", function(){
 		});
 	});
 
+	it("should initialize with new Array properly", function(){
+		var myQueue = new BluebirdQueue(new Array(3));
+
+		return Promise.join(myQueue.get(), myQueue.get(), myQueue.get());
+	});
 });
