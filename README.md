@@ -9,16 +9,21 @@ You can use any promise library supporting the following format by passing the p
     new Promise(function(resolve, reject){
     
     });
+
+    var Fifo = require("promise-fifo").use(Promise);
 ```
 
 
 Installation
 ----
+Installation is like any other node module:
 
     npm install promise-fifo
 
-Usage (bluebird example)
+Usage
 ----
+
+## Bluebird Example
 
 ```javascript
     var Promise = require("bluebird");
@@ -36,6 +41,25 @@ Usage (bluebird example)
       console.log(value); //bar
     });
 ```
+
+## Q Example
+Using with Q is very similar, though based on your version, the constructor name may have a lower/uppercase `p`
+
+See the Q API-Reference: https://github.com/kriskowal/q/wiki/API-Reference#qpromiseresolver
+
+
+```javascript
+    var Q = require("q");
+
+    // > 0.9.7
+    var Fifo = require("promise-fifo").use(Q.Promise);
+
+    // <= 0.9.7
+    var Fifo = require("promise-fifo").use(Q.promise);
+
+```
+
+
 
 Rate Limiting Example
 ----
