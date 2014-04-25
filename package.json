@@ -1,0 +1,25 @@
+{
+  "name": "promise-fifo",
+  "version": "0.0.0",
+  "description": "A FIFO (first-in-first-out) queue using promises",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mastercactapus/node-promise-fifo.git"
+  },
+  "keywords": [
+    "fifo",
+    "promise",
+    "queue",
+    "concurrency"
+  ],
+  "author": "Nathan Caza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mastercactapus/node-promise-fifo/issues"
+  },
+  "homepage": "https://github.com/mastercactapus/node-promise-fifo"
+}
