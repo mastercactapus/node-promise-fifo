@@ -1,6 +1,6 @@
 {
   "name": "promise-fifo",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A FIFO (first-in-first-out) queue using promises",
   "main": "index.js",
   "scripts": {
