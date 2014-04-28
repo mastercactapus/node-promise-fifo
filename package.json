@@ -21,5 +21,10 @@
   "bugs": {
     "url": "https://github.com/mastercactapus/node-promise-fifo/issues"
   },
-  "homepage": "https://github.com/mastercactapus/node-promise-fifo"
+  "homepage": "https://github.com/mastercactapus/node-promise-fifo",
+  "devDependencies": {
+    "bluebird": "^1.2.4",
+    "chai": "^1.9.1",
+    "mocha": "^1.18.2"
+  }
 }

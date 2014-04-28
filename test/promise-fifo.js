@@ -1,7 +1,6 @@
 var Promise = require("bluebird");
 var chai = require("chai");
 var expect = chai.expect;
-require("mocha-as-promised")();
 
 var Queue = require("..");
 
